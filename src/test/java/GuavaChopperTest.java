@@ -10,7 +10,7 @@ import static org.junit.Assert.assertEquals;
  * Created by ianmcderp on 04.11.2016.
  */
 @RunWith(JUnitParamsRunner.class)
-public class ChopperTests {
+public class GuavaChopperTest {
     @Test
     @Parameters(source = ChopperTestData.class, method = "provideTestData")
     public void GuavaChop_ArrayOfValues_ReturnsIndex(int wanted, int[] array, int expectedIndex) {
