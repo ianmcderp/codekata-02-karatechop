@@ -1,4 +1,3 @@
-import data.ChopperTestData;
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
 import org.junit.Test;

@@ -1,5 +1,3 @@
-package data;
-
 /**
  * Created by ianmcderp on 04.11.2016.
  */
