@@ -28,6 +28,12 @@ public class ChopperTest {
         assertChopping(new NewtonChopper().chop(wanted, array), expectedIndex);
     }
 
+    @Test
+    @Parameters(source = ChopperTestData.class, method = "provideTestData")
+    public void SimpleBinaryChop_ArrayOfValues_ReturnsIndex(int wanted, int[] array, int expectedIndex) {
+        assertChopping(new SimpleBinaryChopper().chop(wanted, array), expectedIndex);
+    }
+
     private void assertChopping(int returnedIndex, int expectedIndex) {
         assertEquals(expectedIndex, returnedIndex);
     }
